@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Too</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+  <header>
+      Current Weather in the United States
+  </header>
+
+  <section class="weather">
+    <div id="main" class="main-container"></div>
+  </section>
+
+  <!-- react -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  
+  <!-- babel - to handle jsx in browser (not for production, only dev) -->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- react components for weather card and container -->
+  <script type="text/babel" src="js/weather-card-container.js"></script>
+  <script type="text/babel" src="js/weather-card.js"></script>
+
+  <script type="text/babel" src="js/index.js"></script>
+</body>
+</html>
