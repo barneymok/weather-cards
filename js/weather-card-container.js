@@ -1,12 +1,9 @@
 'use strict';
 
 class WeatherCardContainer extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      data: []
-    }
+  // initialize state
+  state = {
+    data: []
   }
 
   // Utility to convert value from Meters Per Second to Miles Per Hour
@@ -31,7 +28,7 @@ class WeatherCardContainer extends React.Component {
     return `${weatherApi}?q=${cityName}&apiKey=${apiKey}`;    
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.fetchData();
   }
 
